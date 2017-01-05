@@ -1,0 +1,22 @@
+{
+  "name" : "neoauto/neoauto-log" ,
+  "description" : "Library Log",
+  "type" : "project",
+  "authors" : [
+    {
+      "name" : "Javier Rubio"
+    }
+  ],
+  "require" : {
+    "php" : ">= 5.4.0",
+    "symfony/dependency-injection": "^2.8.12",
+    "zendframework/zend-config": "^2.5.1",
+    "monolog/monolog": "^1.22.0"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "Neoauto\\" : "src/",
+      "Neoauto\\App\\" : "app/"
+    }
+  }
+}

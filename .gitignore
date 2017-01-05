@@ -1,0 +1,12 @@
+
+/nbproject/private/
+/.idea/*
+/.idea
+/vendor/*
+vendor/
+vendor
+/.kdev4/
+*.log
+*.orig
+src/Config/
+src/Config/*
