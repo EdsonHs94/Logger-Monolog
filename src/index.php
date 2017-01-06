@@ -16,8 +16,11 @@ try {
 
     $log->warning('Warning 0001');
     $log->error('Error 0002');*/
+    $errorLog = 'ERROR 00001';
     $log = new MonoLog();
-    $log->error();
+    //var_dump($log);die;
+    //$log->error($errorLog);
+    $log->alert($errorLog);
     //var_dump($log);
 }
 

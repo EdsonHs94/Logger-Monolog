@@ -22,12 +22,58 @@ class MonoLog extends BaseDomain implements ILog
         $this->monolog = $factory->getMonolog();
     }
     
-    public function error()
+    public function error($message)
     {
         try {
 
-            $this->monolog->error('foo');
+            $this->monolog->error($message);
             
+        } catch (Exception $e) {
+
+        }
+    }
+
+    public function info($message)
+    {
+        try {
+
+            $this->monolog->error($message);
+
+        } catch (Exception $e) {
+
+        }
+    }
+
+    public function debug($message)
+    {
+        try {
+            $this->monolog->debug($message);
+
+        } catch (Exception $e) {
+
+        }
+    }
+    public function warning($message){
+        try {
+            $this->monolog->warning($message);
+
+        } catch (Exception $e) {
+
+        }
+    }
+
+    public function alert($message){
+        try {
+            $this->monolog->alert($message);
+
+        } catch (Exception $e) {
+
+        }
+    }
+    public function emergency($message){
+        try {
+            $this->monolog->emergency($message);
+
         } catch (Exception $e) {
 
         }
